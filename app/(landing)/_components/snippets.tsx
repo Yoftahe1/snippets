@@ -49,29 +49,27 @@ const Snippets = () => {
     },
   ];
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-black-800 flex justify-center">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
-          Snippets
+          Popular Snippets
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {snippets.map((snippet, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+              className=" bg-white dark:bg-black rounded-lg shadow-md overflow-hidden flex flex-col"
             >
-              <div className="p-4">
+              <div className="p-4 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold mb-2">{snippet.title}</h3>
                 <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-2">
                   <span>{snippet.language}</span>
                 </div>
-                <pre className="bg-gray-100 dark:bg-gray-800 p-2 rounded text-sm overflow-x-auto">
+                <pre className="bg-gray-100 dark:bg-black-800 p-2 rounded text-sm overflow-auto h-[200px]">
                   <code>{snippet.code}</code>
                 </pre>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-600 px-4 py-3 flex justify-between items-center">
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                </span>
+              <div className=" px-4 py-3 flex justify-end items-center">
                 <Button variant="ghost" size="sm" className="flex items-center">
                   <Copy className="h-4 w-4 mr-2" />
                   Copy

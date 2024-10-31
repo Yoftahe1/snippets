@@ -1,11 +1,11 @@
-import Hero from "./_components/hero";
+import Filter from "./_components/filter";
 import Snippets from "./_components/snippets";
 
 const Page = () => {
   return (
     <>
-      <Hero />
-      <Snippets />
+      <Filter />
+      <Snippets/>
     </>
   );
 };

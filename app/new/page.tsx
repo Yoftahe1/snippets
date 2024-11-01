@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Form from "./_components/form";
 
 const Page = () => {
-  return (
-    <div>Page</div>
-  )
-}
+  return <Form />;
+};
 
-export default Page
+export default Page;
